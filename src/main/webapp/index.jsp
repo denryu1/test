@@ -3,13 +3,7 @@
 <html>
 <head>
     <title>映画予約</title>
-    <style>
-        body { font-family: Arial; background:#f5f5f5; }
-        .container { width: 500px; margin: 50px auto; padding: 20px; background:white; border-radius:8px; box-shadow:0 0 10px #ccc; }
-        .movie { margin: 10px 0; }
-        button { padding:8px 16px; background:#007bff; color:white; border:none; border-radius:4px; cursor:pointer; }
-        button:hover { background:#0056b3; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container">

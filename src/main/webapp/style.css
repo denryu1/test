@@ -1,0 +1,102 @@
+/* 共通レイアウト */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(120deg, #f0f4f9 0%, #d9e7fa 100%);
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 28px 28px 28px;
+    text-align: center;
+}
+h1, h2 {
+    margin-bottom: 28px;
+    color: #2a3b4c;
+    font-size: 2rem;
+}
+select, input[type="text"], input[type="email"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #cfd8dc;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+}
+button, input[type="submit"] {
+    margin-top: 24px;
+    padding: 12px 0;
+    width: 100%;
+    background: #4f8cff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(79,140,255,0.08);
+    transition: background 0.2s;
+}
+button:hover, input[type="submit"]:hover {
+    background: #2563eb;
+}
+.form-group {
+    margin: 18px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+/* 座席エリア */
+.seats-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+.seat {
+    display: inline-block;
+    min-width: 48px;
+    padding: 12px 0;
+    background: #e3eefa;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #2a3b4c;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    transition: background 0.2s, color 0.2s;
+    border: 2px solid transparent;
+    text-align: center;
+}
+.seat.selected {
+    background: #4f8cff;
+    color: #fff;
+    border: 2px solid #2563eb;
+}
+.seat.reserved {
+    background: #b0b8c9;
+    color: #fff;
+    cursor: not-allowed;
+    opacity: 0.7;
+    pointer-events: none;
+}
+/* 完了ページ用 */
+.complete-message {
+    font-size: 1.3rem;
+    color: #2563eb;
+    margin: 32px 0 24px 0;
+}
+.top-link {
+    color: #4f8cff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.top-link:hover {
+    text-decoration: underline;
+}

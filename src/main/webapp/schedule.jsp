@@ -7,8 +7,10 @@
 <html>
 <head>
     <title>上映スケジュール</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container">
 <h2>上映スケジュールを選択</h2>
 <form action="SeatsServlet" method="get">
     <input type="hidden" name="movie_id" value="<%=movieId%>">
@@ -25,5 +27,6 @@
     </select>
     <button type="submit">次へ</button>
 </form>
+</div>
 </body>
 </html>
