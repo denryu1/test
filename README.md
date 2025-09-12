@@ -1,3 +1,4 @@
+CREATE DATABASE neocinema;
 -- 映画作品テーブル
 CREATE TABLE movies (
     id SERIAL PRIMARY KEY,
